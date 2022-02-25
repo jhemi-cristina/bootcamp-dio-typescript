@@ -133,7 +133,15 @@ var animal = {
 var input = document.getElementById("input");
 input.addEventListener("input", function (event) {
   var i = event.currentTarget;
-});
+}); // Generic types
+
+function adicionaApendiciALista(array, valor) {
+  return array.map(function (item) {
+    return item + valor;
+  });
+}
+
+adicionaApendiciALista([1, 2, 3], 1);
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

@@ -36,3 +36,11 @@ const input = document.getElementById("input") as HTMLInputElement;
 input.addEventListener("input", (event) => {
   const i = event.currentTarget as HTMLInputElement;
 });
+
+// Generic types
+
+function adicionaApendiciALista<NaoSei>(array: any[], valor: NaoSei) {
+  return array.map((item) => item + valor);
+}
+
+adicionaApendiciALista([1, 2, 3], 1);
